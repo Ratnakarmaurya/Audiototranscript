@@ -28,18 +28,8 @@ class BrowseButton:
         self.openFileLocation=Button(self.frame,text ="Open Location",command=self.openLocation)
         self.openFileLocation.pack()
 
-
-
-
-
-
-
-
-
-
-
     def browseFile(self): #used to get destination of desired file
-
+    
         self.filename=filedialog.askopenfilename \
             (initialdir = "/",title = "Select file",
              filetypes = [("Wav files", "*.wav"),("Mp3 files","*.mp3"),("Aac files","*.aac"),("all files","*.*")])
